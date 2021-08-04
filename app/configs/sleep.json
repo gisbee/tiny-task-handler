@@ -1,7 +1,7 @@
 {
-  "code_url": "https://github.com/gisbee/task-handler",
+  "code_url": "https://github.com/gisbee/tiny-task-handler.git",
   "execution": {
-    "command": "/bin/bash $HOME/gisbee/scripts/sleep.sh",
+    "command": "/bin/bash $HOME/tiny-task-handler/scripts/sleep.sh",
     "args": {
       "arg1": "welcometext",
       "arg2": "seconds",

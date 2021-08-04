@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+  web:
+    build: ./
+    command: sh ./init-flask.sh
+    restart: unless-stopped
+    volumes:
+      - ./:/nanoserver
+    env_file:
+      - ./.env
+    ports:
+      - 5000:5000
+
+  celery:
+    build: ./
+    entrypoint: sh ./init-celery.sh
+    restart: unless-stopped
+    volumes:
+      - ./:/nanoserver
+    depends_on:
+      - redis
+    env_file:
+      - ./.env
+
+  redis:
+    image: redis:alpine
+    command: [sh, -c, "rm -f /data/dump.rdb && redis-server --save ''"]
+    restart: unless-stopped
+    ports:
+      - 6379:6379

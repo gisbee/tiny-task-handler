@@ -1,0 +1,19 @@
+repos:
+  - repo: https://github.com/PyCQA/isort
+    rev: 5.7.0
+    hooks:
+      - id: isort
+        name: Sorting imports
+        entry: isort -m 3 -tc
+        files: app/
+  - repo: https://github.com/psf/black
+    rev: 20.8b1
+    hooks:
+      - id: black
+        name: Formatting according to PEP8
+        entry: black -l 79
+        files: app/
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.4.0
+    hooks:
+      - id: check-added-large-files

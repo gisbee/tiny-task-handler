@@ -1,0 +1,11 @@
+{
+  "code_url": "https://github.com/gisbee/task-handler",
+  "execution": {
+    "command": "/bin/bash $HOME/gisbee/scripts/sleep.sh",
+    "args": {
+      "arg1": "welcometext",
+      "arg2": "seconds",
+      "arg3": "exittext"
+    }
+  }
+}

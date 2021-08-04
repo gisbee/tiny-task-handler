@@ -1,0 +1,25 @@
+.DS_Store
+*ENV/
+*__pycache__*
+venv/
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# dev environments
+.vscode
+*.env
+
+# keys
+*keys/
+*deployment/certbot/
+
+# logs
+*logs/
+*.log

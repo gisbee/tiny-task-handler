@@ -1,6 +1,6 @@
 # A Tiny Task Handler
 
-A simple and elegant task handler using Flask and Celery. Useful for running time-intensive applications and scale up dynamically to add new tasks with utmost ease.
+This project is a simple and elegant task handler using Flask and Celery. It is useful for running time-intensive applications and scale up dynamically to add new tasks with utmost ease. Adding a new task is as simple as creation of a configuration file in JSON format. Configuration can be extended to handle more complex conditions like IP address to a remote machine, or creation of Ec2/GCE instances. This is a starter code and can be extended as needed.
 
 ## Setup
 1. Create a `.env` file similar to `.env.example`
